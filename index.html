@@ -1,27 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div id="outside">
+<form id="survey-form"
+  <h1 id="title">Registration form</h1>
+  <p id="description"> Register a new student </p>
+  
+  <fieldset>
+    <div>
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" required id="name" name="user_name" placeholder="Enter name here">   </div>
+    <div>
+      <label id="email-label" for="Email">Email:</label>
+      <input type="email" required id="email" name="user_email" placeholder="Enter email here">   </div>
+    <div>
+      <label id="number-label" for="phone"> Number:</label>
+      <input type="number" id="number" name="user_name" placeholder="Enter 10 digit number" min="1" max="125">  </div>
+	  	  <fieldset>
+    <div>
+      <select id="dropdown">
+  <option value=""></option>
+  <option value=""></option>
+  <option value=""></option>
+  <option value=""></option>
+  </select>
+    </div>
+  </fieldset>
+	  
+    <div>
+      <label for="name">name</label>
+      <p>
+        <input type="radio" name="name" value="name1" checked> name1<br>
+        <input type="radio" name="name" value="name2"> name2<br>
+        <input type="radio" name="name" value="name3"> name3
+      </p>
+    </div>
+	
+
+  
+  </fieldset>
+  <fieldset>
+    <label for="values">Check All That Apply</label>
+    <p>
+      <input type="checkbox" name="value1" value="value1"> I have value1<br>
+      <input type="checkbox" name="value2" value="value2"> I am  value2<br>
+      <input type="checkbox" name="value3" value="value3"> I have value3<br>
+    </p>
+  </fieldset>
+  
+
+  
+  <fieldset>
+    <div>
+      <label for="msg"></label>
+      <p> In 50 words or more explain why you want to register</p>
+      <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
     
-    <p>“Hello World, we are software developers!” </p>
-    <!--
+  </fieldset>
 
-    
+  <div id="submitbutton">
+    <button type="submit" id="submit">submit</button>   </div>
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
-    <script  src="js/index.js"></script>
-  </body>
-</html>
+</form>
+  </div>
